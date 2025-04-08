@@ -23,6 +23,9 @@ git add .
 #commit changes from the staging area
 git commit -m "Commit message"
 
+#commit all the unstaged changes, without running git add command
+git commit -a -m "Commit message"
+
 #shows the status of the repository
 git status
 
