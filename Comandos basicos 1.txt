@@ -29,3 +29,11 @@ git status
 #log of the commits on the repository
 git log
 
+#log of the commits only showing first line of the comment
+git log --oneline
+
+#change the default editor for command git commit
+git config --global core.editor "vim"
+
+#to amend the previous commit, you can add files to the commit or just to change the commit message
+git commit --amend
