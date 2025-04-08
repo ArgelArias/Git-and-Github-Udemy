@@ -1,0 +1,19 @@
+#view the branches, * on the current branch
+git branch
+
+#create a new branch based on the current HEAD
+#branch name should not include spaces
+git branch <branch-name>
+
+#switch the current branch
+git switch <branch-name>
+
+#create and switch branch on the same command
+git switch -c <branch-name>
+
+-----------------CHECKOUT----------------------
+#switch the current branch, old school way
+git checkout <branch-name>
+
+#create and switch branch on the same command, old school way
+git checkout -b <branch-name>
