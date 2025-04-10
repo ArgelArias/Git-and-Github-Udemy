@@ -1,0 +1,15 @@
+----------------Fast-forward merge-----------------------
+#first move HEAD to the branch where you need to put the merge
+git switch master
+#then run the command with the branch from merge
+git merge <branch-name>
+#example
+git merge bugfix
+
+-----------------Conflicts on the merge-------------------
+You need to manually enter to the conflicted files
+and decided for what will be the final content of the same
+then make the add and the commit for those files.
+
+git add <file-names>
+git commit -m "<Commit message>"
