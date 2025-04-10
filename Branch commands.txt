@@ -11,6 +11,15 @@ git switch <branch-name>
 #create and switch branch on the same command
 git switch -c <branch-name>
 
+#delete a branch, you cannot be in the branch to delete
+git branch -d <branch-name>
+
+#force delete a branch, HEAD cannot be in the branch to delete
+git branch -D <branch-name>
+
+#rename a branch, HEAD must be in the branch
+git branch -m <new-branch-name>
+
 -----------------CHECKOUT----------------------
 #switch the current branch, old school way
 git checkout <branch-name>
