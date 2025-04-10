@@ -1,6 +1,9 @@
 #view the branches, * on the current branch
 git branch
 
+#view the branches with more detail
+git branch -v
+
 #create a new branch based on the current HEAD
 #branch name should not include spaces
 git branch <branch-name>
