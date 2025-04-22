@@ -1,0 +1,18 @@
+#compares Unstages area vs Working directory
+git diff
+
+#compares HEAD vs Working directory
+git diff HEAD
+
+#compares Stages area vs Working directory
+git diff --staged
+#or
+git diff --cached
+
+#diff only for specific files
+git diff [filename]
+git diff [filename] [filename2]
+git diff HEAD [filename]
+git diff HEAD [filename] [filename2]
+git diff --staged [filename]
+git diff --staged [filename] [filename2]
