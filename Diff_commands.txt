@@ -4,6 +4,9 @@ git diff
 #compares HEAD vs Working directory
 git diff HEAD
 
+#compares HEAD vs the parent of HEAD
+git diff HEAD HEAD~1
+
 #compares Stages area vs Working directory
 git diff --staged
 #or
@@ -16,3 +19,16 @@ git diff HEAD [filename]
 git diff HEAD [filename] [filename2]
 git diff --staged [filename]
 git diff --staged [filename] [filename2]
+
+#diff between branches
+git diff branch1..branch2
+#or
+git diff branch1 branch2
+
+#diff between commits
+git diff <commithash1>..<commithash2>
+#or
+git diff <commithash1> <commithash2>
+
+#diff between commits specifiying the file to compare
+git diff <commithash1> <commithash2> [filename]
