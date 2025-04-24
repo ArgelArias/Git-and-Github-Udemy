@@ -1,0 +1,36 @@
+#stash helps you to save the changes that are not ready to commit
+#when you need to move to another branch for whatever reason
+
+#it will save the staged and unstaged changes,
+#reverting the changes on the working copy
+
+#stash the current changes on the branch
+git stash save
+#or only
+git stash
+
+#recover the changes from the stash
+git stash pop
+
+#apply the stashed changes on the current branch but without remove them from the stash
+git stash apply
+
+------------------------MULTIPLE STASHING----------------------
+#you can continue doing git stash and it will create a queue of stashes
+
+#list the queue of stashes
+git stash list
+
+#to apply any stash from the queue
+git stash apply [stashID]
+#for example
+git stash apply stash@{2}
+
+#dropping stashes
+#drop the desired stash
+git stash drop [stashID]
+#for example
+git stash drop stash@{2}
+
+#crear all the stash queue
+git stash clear
