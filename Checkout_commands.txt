@@ -1,0 +1,15 @@
+#going back in time
+#move the HEAD to a particular commit, AKA "detaching HEAD"
+git checkout <commit-hash>
+#or
+#you can you move to previous HEAD's from the current using HEAD~n
+git checkout HEAD~1 #goes 1 previous HEAD from the current
+git checkout HEAD~2 #goes 2 previous HEAD from the current and so...
+
+#create a new brach from the detached HEAD
+git switch -c <new-branch-name>
+
+#undo the detaching HEAD
+got switch master
+#or
+git switch -
