@@ -1,0 +1,5 @@
+#revert to a commit without removing commits from the repository
+#the <commit-hash> must be the commit you want to get rid of, not the previous.
+git revert <commit-hash>
+
+#this will create a new commit on the repository tree based on the previous commit you choose from

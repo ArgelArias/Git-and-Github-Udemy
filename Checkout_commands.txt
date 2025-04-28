@@ -1,3 +1,4 @@
+######################CHECKOUT###########################
 #going back in time
 #move the HEAD to a particular commit, AKA "detaching HEAD"
 git checkout <commit-hash>
@@ -13,3 +14,18 @@ git switch -c <new-branch-name>
 got switch master
 #or
 git switch -
+
+#undoing chages back to HEAD, using checkout
+git checkout HEAD <filename> #(could be multiple filenames)
+#or
+git checkout -- <filename> #(could be multiple filenames)
+
+######################RESTORE#################################
+
+#undoing chages back to HEAD, using restore
+git restore <filename> #(could be multiple filenames)
+#now referring different commit
+git restore --source HEAD~2 <filename>
+
+#unstage files
+git restore --staged <filename>

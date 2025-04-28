@@ -1,0 +1,6 @@
+#delete commit from the current branch
+#last changes will remain on the working directory
+git reset <commit-hash where you want to remain> #(!carefull!, commits after that will be deleted from the branch)
+
+#hardway, deleting also from the working directory (!carefull!, commits after that will be deleted from the branch)
+git reset --hard <commit-hash where you want to remain> 
