@@ -1,0 +1,19 @@
+#show the list of remote in the repository
+git remote
+#or
+git remote -v
+
+#add a new remote
+git remote add <name> <url>
+#"origin" for convention is the most used name for remotes
+
+#rename a remote
+git remote rename <old> <new>
+
+#remova a remote
+git remote remove <name>
+
+#push to remote github, or any other repository host
+git push <remote> <branch>
+#for example
+git push origin master
