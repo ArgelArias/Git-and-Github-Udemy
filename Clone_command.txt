@@ -1,0 +1,2 @@
+#clone a repository from github or any order repo host like gitlab
+git clone <url-link>
