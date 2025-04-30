@@ -17,3 +17,16 @@ git remote remove <name>
 git push <remote> <branch>
 #for example
 git push origin master
+
+#pushing to a branch with different name
+git push <remote> <local-branch>:<remote-branch>
+#for example
+git push origin cats:master
+
+#create an upstream track for local branch to be connected to remote branch with the same name
+git push -u origin master
+#this will track the local master with the remote master
+#next time you can just simply type the next command for pushing
+git push
+#it can be done also if they have different name, for example
+git push -u origin cats:master
