@@ -8,7 +8,7 @@ git branch -v
 #branch name should not include spaces
 git branch <branch-name>
 
-#switch the current branch
+#switch the current branch, (it also works for branches on the remote)
 git switch <branch-name>
 
 #create and switch branch on the same command
@@ -23,9 +23,15 @@ git branch -D <branch-name>
 #rename a branch, HEAD must be in the branch
 git branch -m <new-branch-name>
 
+#list the branches on the remote
+git branch -r
+
 -----------------CHECKOUT----------------------
 #switch the current branch, old school way
 git checkout <branch-name>
 
 #create and switch branch on the same command, old school way
 git checkout -b <branch-name>
+
+#track a branch to a branch on the remote THIS IS THE HARD WAY!!! switch already do it easy
+git checkout --track origin/puppies
