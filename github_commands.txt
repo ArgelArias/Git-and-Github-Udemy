@@ -1,0 +1,8 @@
+#fetch 
+#update the changes from all the remote branches, without screwing the local branch
+git fetch <remote>
+#for example
+git fetch origin
+
+#fetch only for specified branch
+git fetch <remote> <branch>
