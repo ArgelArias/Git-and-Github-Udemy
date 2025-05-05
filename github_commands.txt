@@ -6,3 +6,8 @@ git fetch origin
 
 #fetch only for specified branch
 git fetch <remote> <branch>
+
+#get the updates from the remote to local !!!BE CAREFULL WITH THE CURRENT BRANCH, it will update on it no matters which branch you use for pulling from the remote
+git pull <remote> <branch>
+#for example
+git pull origin master
