@@ -1,0 +1,24 @@
+#############when NOT to rebase############
+when the commit were already shared with other.
+If they are alreadty commited on Github
+
+#rebase rewrites the history creating new commits for each of the original feature branch commits.
+#It creates a linear and clearer view of the hostiry
+#Use it on branches different that master/main
+
+git switch <branch-name>
+git rebase <branch-from-where-to-rebase> #usually master
+#for example
+git switch feature
+git rebase master
+
+#resolve conflicts when rebasing
+#resolve the conflicts manually like in every other merge and...
+git add <conflicted_files>
+git rebase --continue
+
+#skip the conflicting commit
+git rebase --skip
+
+#abort when a rebase has conflicts
+git rebase --abort
