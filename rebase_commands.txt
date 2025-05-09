@@ -22,3 +22,14 @@ git rebase --skip
 
 #abort when a rebase has conflicts
 git rebase --abort
+
+##################Interactive rebase###################
+#this will work on the current branch
+git rebase -i HEAD~4
+
+######commands for interactive rebase
+p, pick - use commit
+r, reword - use commit, but update the commit message
+edit - use commit, but stop for amending
+fixup - use commit contents but meld into previous
+drop - remove commit
