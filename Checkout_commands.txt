@@ -20,6 +20,9 @@ git checkout HEAD <filename> #(could be multiple filenames)
 #or
 git checkout -- <filename> #(could be multiple filenames)
 
+#detach head to a tag
+git checkout <tag>
+
 ######################RESTORE#################################
 
 #undoing chages back to HEAD, using restore

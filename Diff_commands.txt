@@ -32,3 +32,6 @@ git diff <commithash1> <commithash2>
 
 #diff between commits specifiying the file to compare
 git diff <commithash1> <commithash2> [filename]
+
+#diff based on tags
+git diff <tag1> <tag2>

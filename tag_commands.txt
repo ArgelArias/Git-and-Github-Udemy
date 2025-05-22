@@ -1,0 +1,41 @@
+#list all the tags on the repo
+git tag
+#or
+git tag -l
+
+#list tags searching by wildcards or name
+git tag -l "<regex>"
+
+#detach head to a tag
+git checkout <tag>
+
+#diff based on tags
+git diff <tag1> <tag2>
+
+#create a lightwieght tag, this will be created on the point where the HEAD is
+git tag <tagname>
+
+#more than one tag can be created per commit
+
+#create an annotated tag, this will be created on the point where the HEAD is
+git tag -a <tagname>
+#pass the message directly on the command
+git tag -a <tagname> -m "<message>"
+
+#view tags details
+git show <tag>
+
+#tag on previous commits
+#git tag <tag> <commit-hash>
+
+#force tags to be created, for example the tag already exists but it needs to be in another commit
+git -f tag <tag> <commit-hash>
+
+#delete a tag
+git tag -d <tag>
+
+#push the all the tags, this will not be pushed by default
+git push origin --tags
+
+#push only one tag
+git push origin <tag>
