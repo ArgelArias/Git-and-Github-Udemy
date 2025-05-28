@@ -1,0 +1,18 @@
+#reflog are only locally and they expire in about 90 days depending on the configuration
+
+#see the reflog for a branch
+git reflog show <branch> 
+#for example
+git reflog show HEAD
+git reflog show master
+
+#2 commits back
+HEAD~2
+
+#2 HEADs back. HEAD could be in another branch 2 steps back or even in the same place where currently is.
+HEAD@{2}
+
+#another qualifiers that can be used
+git reflog master@{one.week.ago}
+git checkout bugfix@{2.days.ago}
+git diff main@{0} main@{yesterday}
