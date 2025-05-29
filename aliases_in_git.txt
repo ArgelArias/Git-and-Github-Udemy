@@ -1,0 +1,20 @@
+#local git config file
+.git/config
+
+#global git config file
+~/.gitconfig
+
+#inside on any of those cfg files depending on your desire
+[alias]
+   s = status
+   l = log
+   b = branch
+   cm = commit -m
+
+#to set the aliases from the command prompt
+git config --global alias.st status
+
+#an ! in the alias means that the next is a linux command
+
+#repo with usefull aliases
+https://github.com/GitAlias/gitalias
