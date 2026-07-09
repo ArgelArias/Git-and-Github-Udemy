@@ -40,3 +40,8 @@ git config --global core.editor "vim"
 
 #to amend the previous commit, you can add files to the commit or just to change the commit message
 git commit --amend
+
+#remove a file from the repository
+git rm <filename.txt>
+git commit -m <commit_message>
+git push
